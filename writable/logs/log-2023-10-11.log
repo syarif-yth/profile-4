@@ -1,0 +1,96 @@
+CRITICAL - 2023-10-11 18:45:38 --> require_once(C:\Wamp\www\github\resume-code4\vendor/jwt/JWT.php): Failed to open stream: No such file or directory
+in APPPATH\Modules\Api\Controllers\Login.php on line 3.
+ 1 APPPATH\Modules\Api\Controllers\Login.php(3): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require_once(C:\\Wamp\\www\\github\\resume-code4\\vendor/jwt/JWT.php): Failed to open stream: No such file or directory', 'C:\\Wamp\\www\\github\\resume-code4\\app\\Modules\\Api\\Controllers\\Login.php', 3)
+ 2 APPPATH\Modules\Api\Controllers\Login.php(3): require_once()
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(306): include_once('C:\\Wamp\\www\\github\\resume-code4\\app\\Modules\\Api\\Controllers\\Login.php')
+ 4 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\Wamp\\www\\github\\resume-code4\\app\\Modules\\Api\\Controllers\\Login.php')
+ 5 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Modules\\Api\\Controllers\\Login')
+ 6 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Modules\\Api\\Controllers\\Login')
+ 7 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(877): class_exists('\\App\\Modules\\Api\\Controllers\\Login', true)
+ 8 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(481): CodeIgniter\CodeIgniter->startController()
+ 9 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\Wamp\\www\\github\\resume-code4\\public\\index.php')
+CRITICAL - 2023-10-11 18:47:16 --> require_once(C:\Wamp\www\github\resume-code4\vendor\firebase\src\JWT.php): Failed to open stream: No such file or directory
+in APPPATH\Modules\Api\Controllers\Login.php on line 3.
+ 1 APPPATH\Modules\Api\Controllers\Login.php(3): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require_once(C:\\Wamp\\www\\github\\resume-code4\\vendor\\firebase\\src\\JWT.php): Failed to open stream: No such file or directory', 'C:\\Wamp\\www\\github\\resume-code4\\app\\Modules\\Api\\Controllers\\Login.php', 3)
+ 2 APPPATH\Modules\Api\Controllers\Login.php(3): require_once()
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(306): include_once('C:\\Wamp\\www\\github\\resume-code4\\app\\Modules\\Api\\Controllers\\Login.php')
+ 4 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\Wamp\\www\\github\\resume-code4\\app\\Modules\\Api\\Controllers\\Login.php')
+ 5 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Modules\\Api\\Controllers\\Login')
+ 6 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Modules\\Api\\Controllers\\Login')
+ 7 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(877): class_exists('\\App\\Modules\\Api\\Controllers\\Login', true)
+ 8 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(481): CodeIgniter\CodeIgniter->startController()
+ 9 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\Wamp\\www\\github\\resume-code4\\public\\index.php')
+CRITICAL - 2023-10-11 18:48:04 --> App\Modules\Api\Controllers\Login cannot use Firebase\JWT\JWT - it is not a trait
+in APPPATH\Modules\Api\Controllers\Login.php on line 13.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-10-11 18:48:41 --> key must be a string when using hmac
+in VENDORPATH\firebase\php-jwt\src\JWT.php on line 248.
+ 1 VENDORPATH\firebase\php-jwt\src\JWT.php(218): Firebase\JWT\JWT::sign('eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJJc3N1ZXIgb2YgdGhlIEpXVCIsImF1ZCI6IkF1ZGllbmNlIHRoYXQgdGhlIEpXVCIsInN1YiI6IlN1YmplY3Qgb2YgdGhlIEpXVCIsImlhdCI6MTY5NzA1MDEyMSwiZXhwIjoxNjk3MDUzNzIxfQ', false, 'HS256')
+ 2 APPPATH\Modules\Api\Controllers\Login.php(36): Firebase\JWT\JWT::encode([...], false, 'HS256')
+ 3 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(919): App\Modules\Api\Controllers\Login->index()
+ 4 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Modules\Api\Controllers\Login))
+ 5 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\Wamp\\www\\github\\resume-code4\\public\\index.php')
+CRITICAL - 2023-10-11 18:50:03 --> key must be a string when using hmac
+in VENDORPATH\firebase\php-jwt\src\JWT.php on line 248.
+ 1 VENDORPATH\firebase\php-jwt\src\JWT.php(218): Firebase\JWT\JWT::sign('eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJJc3N1ZXIgb2YgdGhlIEpXVCIsImF1ZCI6IkF1ZGllbmNlIHRoYXQgdGhlIEpXVCIsInN1YiI6IlN1YmplY3Qgb2YgdGhlIEpXVCIsImlhdCI6MTY5NzA1MDIwMywiZXhwIjoxNjk3MDUzODAzfQ', false, 'HS256')
+ 2 APPPATH\Modules\Api\Controllers\Login.php(35): Firebase\JWT\JWT::encode([...], false, 'HS256')
+ 3 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(919): App\Modules\Api\Controllers\Login->index()
+ 4 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Modules\Api\Controllers\Login))
+ 5 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\Wamp\\www\\github\\resume-code4\\public\\index.php')
+CRITICAL - 2023-10-11 18:51:12 --> key must be a string when using hmac
+in VENDORPATH\firebase\php-jwt\src\JWT.php on line 248.
+ 1 VENDORPATH\firebase\php-jwt\src\JWT.php(218): Firebase\JWT\JWT::sign('eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJJc3N1ZXIgb2YgdGhlIEpXVCIsImF1ZCI6IkF1ZGllbmNlIHRoYXQgdGhlIEpXVCIsInN1YiI6IlN1YmplY3Qgb2YgdGhlIEpXVCIsImlhdCI6MTY5NzA1MDI3MiwiZXhwIjoxNjk3MDUzODcyfQ', false, 'HS256')
+ 2 APPPATH\Modules\Api\Controllers\Login.php(35): Firebase\JWT\JWT::encode([...], false, 'HS256')
+ 3 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(919): App\Modules\Api\Controllers\Login->index()
+ 4 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Modules\Api\Controllers\Login))
+ 5 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\Wamp\\www\\github\\resume-code4\\public\\index.php')
+CRITICAL - 2023-10-11 18:54:25 --> Firebase\JWT\JWT::sign(): Argument #1 ($msg) must be of type string, array given, called in C:\Wamp\www\github\resume-code4\app\Modules\Api\Controllers\Login.php on line 35
+in VENDORPATH\firebase\php-jwt\src\JWT.php on line 236.
+ 1 APPPATH\Modules\Api\Controllers\Login.php(35): Firebase\JWT\JWT::sign([...], false, 'HS256')
+ 2 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(919): App\Modules\Api\Controllers\Login->index()
+ 3 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Modules\Api\Controllers\Login))
+ 4 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\Wamp\\www\\github\\resume-code4\\public\\index.php')
+CRITICAL - 2023-10-11 18:56:18 --> key must be a string when using hmac
+in VENDORPATH\firebase\php-jwt\src\JWT.php on line 248.
+ 1 VENDORPATH\firebase\php-jwt\src\JWT.php(218): Firebase\JWT\JWT::sign('eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJJc3N1ZXIgb2YgdGhlIEpXVCIsImF1ZCI6IkF1ZGllbmNlIHRoYXQgdGhlIEpXVCIsInN1YiI6IlN1YmplY3Qgb2YgdGhlIEpXVCIsImlhdCI6MTY5NzA1MDU3OCwiZXhwIjoxNjk3MDU0MTc4fQ', false, 'HS256')
+ 2 APPPATH\Modules\Api\Controllers\Login.php(35): Firebase\JWT\JWT::encode([...], false, 'HS256')
+ 3 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(919): App\Modules\Api\Controllers\Login->index()
+ 4 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Modules\Api\Controllers\Login))
+ 5 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\Wamp\\www\\github\\resume-code4\\public\\index.php')
+CRITICAL - 2023-10-11 18:59:14 --> key must be a string when using hmac
+in VENDORPATH\firebase\php-jwt\src\JWT.php on line 248.
+ 1 VENDORPATH\firebase\php-jwt\src\JWT.php(218): Firebase\JWT\JWT::sign('eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJJc3N1ZXIgb2YgdGhlIEpXVCIsImF1ZCI6IkF1ZGllbmNlIHRoYXQgdGhlIEpXVCIsInN1YiI6IlN1YmplY3Qgb2YgdGhlIEpXVCIsImlhdCI6MTY5NzA1MDc1NCwiZXhwIjoxNjk3MDU0MzU0fQ', false, 'HS256')
+ 2 APPPATH\Modules\Api\Controllers\Login.php(36): Firebase\JWT\JWT::encode([...], false, 'HS256')
+ 3 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(919): App\Modules\Api\Controllers\Login->index()
+ 4 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Modules\Api\Controllers\Login))
+ 5 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\Wamp\\www\\github\\resume-code4\\public\\index.php')
+CRITICAL - 2023-10-11 19:02:28 --> App\Modules\Api\Controllers\Login::index(): Return value must be of type string, CodeIgniter\HTTP\Response returned
+in APPPATH\Modules\Api\Controllers\Login.php on line 42.
+ 1 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(919): App\Modules\Api\Controllers\Login->index()
+ 2 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Modules\Api\Controllers\Login))
+ 3 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\Wamp\\www\\github\\resume-code4\\public\\index.php')
+CRITICAL - 2023-10-11 19:03:01 --> App\Modules\Api\Controllers\Login::index(): Return value must be of type App\Modules\Api\Controllers\json, CodeIgniter\HTTP\Response returned
+in APPPATH\Modules\Api\Controllers\Login.php on line 42.
+ 1 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(919): App\Modules\Api\Controllers\Login->index()
+ 2 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Modules\Api\Controllers\Login))
+ 3 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\Wamp\\www\\github\\resume-code4\\public\\index.php')
